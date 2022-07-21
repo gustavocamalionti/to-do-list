@@ -63,6 +63,7 @@ body {
 
 .container__campos--hover:hover {
     background-color: white;
+    transition: 0.2s ease-in;
 }
 
 .container__campos--active:active {
@@ -101,7 +102,6 @@ body {
 
 @keyframes showw {
     from {
-        
         opacity: 0;
     }
     
