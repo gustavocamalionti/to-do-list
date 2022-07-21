@@ -5,15 +5,20 @@ const textoTarefa = document.getElementsByClassName("container__input-adicionar"
 
 buttonAdicionar.addEventListener('click', addItem);
 
-var strTarefa
 var contadorItens = 0
+var strTarefa
 function addItem() {
     strTarefa = textoTarefa[0].value
-    console.log("passei por aqui")
-    itensAdicionados.innerHTML += "<li id = '" + strTarefa + "' class='container__itens hide'><input type='checkbox' id='" + strTarefa + "' class='container__input-itens'><label for='" + strTarefa + "' class='container__label-itens'>" + strTarefa + "</label></li>";
-    console.log("passei por aqui")
-    var item = document.getElementById(strTarefa)
-    //.classList.add("show")
+    console.log(strTarefa)
+    itensAdicionados.innerHTML = "<li id = '" + strTarefa + "LI' + class='container__itens hide'><input type='checkbox' id='" + strTarefa + "' class='container__input-itens'><label for='" + strTarefa + "' class='container__label-itens'>" + strTarefa + "</label></li>" + itensAdicionados.innerHTML;
+    var item = document.getElementById(strTarefa + "LI");
+    item.classList.remove("hide");
+    item.classList.add("show");
+    buttonAdicionar.disabled = true;
+    setTimeout(function() {
+        
+        item.classList.remove("show");
+        buttonAdicionar.disabled = false;
+    }, 1100)
     console.log(item)
-    contadorItens += 1;
 };

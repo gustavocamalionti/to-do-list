@@ -92,15 +92,23 @@ body {
 }
 
 .show {
-    visibility: visible;
-    opacity: 1;
-    transition: opacity 0.5s linear;
+    animation: showw 1000ms ease-out;
 }
 
 .hide { 
-    visibility: hidden;
-    opacity:0;
+    opacity: 0;
+}
+
+@keyframes showw {
+    from {
+        
+        opacity: 0;
     }
+    
+    to {
+        opacity: 1;
+    }
+}
 
 
 @media screen and (max-width:461px) {
