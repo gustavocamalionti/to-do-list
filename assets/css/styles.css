@@ -4,9 +4,9 @@
 :root {
     --fonte-desenhada: 'Edu VIC WA NT Beginner', cursive;
     --fonte-padrao: 'Montserrat', sans-serif;
-    --azul-claro: rgb(100, 100, 196);
+    --azul-claro: rgb(159, 159, 230);
     --azul-escuro: rgb(61, 61, 131);
-    --fundo-campo: rgb(217, 240, 255);
+    --fundo-campo: rgb(245, 238, 255);
     --preto: black;
     --laranja: #F7BF65;
     --branco: white;
@@ -32,7 +32,6 @@ body {
 }
 
 .container__box {
-    
     display:flex;
     flex-direction: column;
     align-items: center;
